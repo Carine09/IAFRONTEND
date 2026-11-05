@@ -1,0 +1,9 @@
+{
+  "name": "studio-lumen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine de démonstration pour le module IA et dev front-end",
+  "scripts": {
+    "dev": "npx --yes serve . --listen 3000"
+  }
+}
