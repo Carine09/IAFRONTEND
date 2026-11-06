@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Studio Lumen</title>
+  <meta name="description" content="Contactez Studio Lumen pour discuter de votre projet photo.">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="components/button.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <p class="logo">Studio Lumen</p>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu" class="contact-main">
+    <section class="contact-intro" aria-labelledby="titre-contact">
+      <p class="contact-eyebrow">Studio Lumen · Île-de-France</p>
+      <h1 id="titre-contact">Parlons de votre projet</h1>
+      <p>Racontez-moi ce que vous imaginez. Je vous répondrai au sujet des prochaines étapes.</p>
+    </section>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-field">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nom-erreur">
+        <span class="field-error" id="nom-erreur" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Adresse e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erreur">
+        <span class="field-error" id="email-erreur" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" maxlength="2000" required aria-describedby="message-erreur message-compteur"></textarea>
+        <div class="field-meta">
+          <span class="field-error" id="message-erreur" hidden></span>
+          <span id="message-compteur">0 / 2 000 caractères</span>
+        </div>
+      </div>
+
+      <button class="button" type="submit">Préparer mon message</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Studio Lumen</p>
+  </footer>
+</body>
+</html>
