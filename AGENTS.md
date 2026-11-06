@@ -20,6 +20,7 @@ Site vitrine d’une photographe.
 - Chaque champ a un <label> visible.
 - Les erreurs sont reliées au champ (aria-describedby) et annoncées.
 - Tout fonctionne au clavier, avec un focus visible.
+- Les messages de statut utilisent role="status".
 
 ## Sécurité
 - Aucun secret dans le code.

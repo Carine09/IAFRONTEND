@@ -48,6 +48,6 @@ if (form) {
       return;
     }
 
-    status.textContent = "Votre message est prêt. L’envoi sera disponible dès que le formulaire sera relié au service de contact.";
+    status.textContent = "Formulaire validé. Votre message n’a pas été envoyé : l’envoi sera disponible lorsque le formulaire sera relié au service de contact.";
   });
 }
